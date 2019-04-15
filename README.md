@@ -1,6 +1,6 @@
 # DentalClinicManagement
 
-<a href="https://drive.google.com/open?id=1s-wV1ibntL5zd09-luoZMWkZV4T-srTE">Download Report</a>
+<a href="https://drive.google.com/open?id=1s-wV1ibntL5zd09-luoZMWkZV4T-srTE">Download Full Report(GDrive)</a>
 
 INTRODUCTION
 
