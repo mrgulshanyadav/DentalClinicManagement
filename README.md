@@ -1,5 +1,7 @@
 # DentalClinicManagement
 
+[Report] (https://drive.google.com/open?id=1s-wV1ibntL5zd09-luoZMWkZV4T-srTE)
+
 INTRODUCTION
 
 The global dental care and treatment market is growing at 5% Compounded Annual Growth Rate which has been visible in the  last five years with the Asian market showing highest growth of 10% followed by the United States of America at almost half of the total rate of 5.5% CAGR. The market research and analysis team of BCC research agency reveals in its latest report Global Dental Markets: Furniture, Equipment, Materials and Supplies that the global market for these oral health care and treatment industry is expected to reach a total revenue of $55Billion by the year 2019, this steady change in the global market is seen to grow with a five year compound annual growth rate(CAGR) of 2.9%.
