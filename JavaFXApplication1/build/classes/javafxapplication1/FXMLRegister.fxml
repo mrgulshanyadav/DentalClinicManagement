@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="javafxapplication1.FXMLRegisterController">
+  <children>
+    <AnchorPane id="AnchorPane" blendMode="SRC_OVER" cache="true" cacheHint="DEFAULT" depthTest="INHERIT" focusTraversable="true" layoutX="-10.0" layoutY="-7.0" minHeight="423.0" opacity="1.0" prefHeight="-1.0" prefWidth="620.0">
+      <fx:define>
+        <ToggleGroup fx:id="x1" />
+      </fx:define>
+      <children>
+        <Button id="registerbutton" layoutX="303.0" layoutY="297.0" maxHeight="-1.0" maxWidth="-1.0" minHeight="-1.0" minWidth="-1.0" onAction="#registerButtonAction" prefHeight="25.0" text="Register" />
+        <Label fx:id="label" layoutX="433.0" layoutY="145.0" minHeight="16.0" minWidth="69.0" textFill="RED">
+          <font>
+            <Font name="System Bold" size="12.0" fx:id="x2" />
+          </font>
+        </Label>
+        <RadioButton fx:id="logintypeDentist" layoutX="376.0" layoutY="256.0" mnemonicParsing="false" prefHeight="35.0" text="Dentist" toggleGroup="$x1" />
+        <RadioButton fx:id="logintypeOperator" layoutX="286.0" layoutY="256.0" mnemonicParsing="false" prefHeight="35.0" text="Operator" toggleGroup="$x1" />
+        <TextField fx:id="username" layoutX="233.0" layoutY="135.0" prefHeight="35.0" prefWidth="200.0" promptText="Username" />
+        <PasswordField fx:id="password" layoutX="233.0" layoutY="178.0" prefHeight="35.0" prefWidth="200.0" promptText="Password" />
+        <Text layoutX="288.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register">
+          <font>
+            <Font size="26.0" />
+          </font>
+        </Text>
+        <Text layoutX="237.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type" />
+        <Hyperlink layoutX="262.0" layoutY="334.0" onAction="#loginPage" text="Already have account? Login" />
+        <PasswordField fx:id="confirmpassword" layoutX="233.0" layoutY="218.0" prefHeight="35.0" prefWidth="200.0" promptText="Confirm Password" />
+        <Label fx:id="label1" font="$x2" layoutX="433.0" layoutY="228.0" minHeight="16.0" minWidth="69.0" textFill="RED" />
+        <Label id="label1" fx:id="label2" font="$x2" layoutX="433.0" layoutY="188.0" minHeight="16.0" minWidth="69.0" textFill="RED" />
+      </children>
+    </AnchorPane>
+  </children>
+  <stylesheets>
+    <URL value="@style.css" />
+  </stylesheets>
+</AnchorPane>

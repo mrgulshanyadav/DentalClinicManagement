@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="JavaFXApplication1.jnlp">
+  <information>
+    <title>JavaFXApplication1</title>
+    <vendor>rohit</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="JavaFXApplication1.jar" size="72894" download="eager" />
+    <jar href="lib\com.mysql.jdbc_5.1.5.jar" size="676712" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="JavaFXApplication1" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="javafxapplication1.JavaFXApplication1"  name="JavaFXApplication1" />
+  <update check="always"/>
+</jnlp>

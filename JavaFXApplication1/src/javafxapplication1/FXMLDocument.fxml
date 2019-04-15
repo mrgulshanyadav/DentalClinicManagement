@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" blendMode="SRC_OVER" cache="true" cacheHint="DEFAULT" depthTest="INHERIT" focusTraversable="true" minHeight="423.0" opacity="1.0" prefHeight="-1.0" prefWidth="620.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="javafxapplication1.FXMLDocumentController">
+  <fx:define>
+    <ToggleGroup fx:id="logintype" />
+  </fx:define>
+  <children>
+    <Button fx:id="loginbutton" layoutX="295.0" layoutY="271.0" maxHeight="-1.0" maxWidth="-1.0" minHeight="-1.0" minWidth="-1.0" onAction="#loginButtonAction" prefHeight="25.0" text="Login" />
+    <Label fx:id="label" layoutX="426.0" layoutY="157.0" minHeight="16.0" minWidth="69.0" textFill="RED">
+      <font>
+        <Font name="System Bold" size="12.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Label fx:id="label1" font="$x1" layoutX="426.0" layoutY="200.0" minHeight="16.0" minWidth="69.0" textFill="RED" />
+    <RadioButton fx:id="logintypeDentist" layoutX="369.0" layoutY="230.0" mnemonicParsing="false" prefHeight="35.0" text="Dentist" toggleGroup="$logintype" />
+    <RadioButton fx:id="logintypeOperator" layoutX="279.0" layoutY="230.0" mnemonicParsing="false" prefHeight="35.0" text="Operator" toggleGroup="$logintype" />
+    <TextField fx:id="username" layoutX="226.0" layoutY="147.0" prefHeight="35.0" prefWidth="200.0" promptText="Username" />
+    <PasswordField fx:id="password" layoutX="226.0" layoutY="190.0" prefHeight="35.0" prefWidth="200.0" promptText="Password" />
+    <Text layoutX="291.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login">
+      <font>
+        <Font size="26.0" />
+      </font>
+    </Text>
+    <Text layoutX="230.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type" />
+    <Hyperlink layoutX="251.0" layoutY="308.0" onAction="#registerNewAccount" text="Register for New Account" />
+    <Label id="label" fx:id="label2" font="$x1" layoutX="230.0" layoutY="129.0" minHeight="16.0" minWidth="69.0" textFill="RED" />
+  </children>
+  <stylesheets>
+    <URL value="@style.css" />
+  </stylesheets>
+</AnchorPane>

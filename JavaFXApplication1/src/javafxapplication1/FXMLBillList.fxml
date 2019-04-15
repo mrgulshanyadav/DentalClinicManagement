@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="javafxapplication1.FXMLBillListController">
+  <children>
+    <BorderPane layoutX="0.0" layoutY="0.0" prefHeight="400.0" prefWidth="600.0">
+      <center>
+        <Pane prefHeight="200.0" prefWidth="200.0">
+          <children>
+            <Text layoutX="260.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bill List">
+              <font>
+                <Font size="26.0" />
+              </font>
+            </Text>
+            <TableView fx:id="tableview" id="table" layoutX="0.0" layoutY="49.0" prefHeight="327.0" prefWidth="600.0">
+              <columns>
+                <TableColumn id="table-column" maxWidth="5000.0" minWidth="10.0" prefWidth="43.0" text="id" fx:id="col_billid" />
+                <TableColumn id="table-column" maxWidth="5000.0" minWidth="10.0" prefWidth="106.0" text="dentistname" fx:id="col_dentistname" />
+                <TableColumn id="table-column" maxWidth="5000.0" minWidth="10.0" prefWidth="77.0" text="billdate" fx:id="col_billdate" />
+                <TableColumn id="table-column" maxWidth="5000.0" minWidth="10.0" prefWidth="116.0" text="patientname" fx:id="col_patientname" />
+                <TableColumn id="table-column" maxWidth="5000.0" minWidth="10.0" prefWidth="157.0" text="treatments" fx:id="col_treatments" />
+                <TableColumn id="table-column" maxWidth="5000.0" minWidth="10.0" prefWidth="100.0" text="total" fx:id="col_billtotal" />
+              </columns>
+            </TableView>
+          </children>
+        </Pane>
+      </center>
+      <top>
+        <MenuBar id="menu-bar" fx:id="myMenuBar">
+          <menus>
+            <Menu mnemonicParsing="false" text="Patient">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#addpatientButtonAction" text="Add" />
+                <MenuItem mnemonicParsing="false" onAction="#updatepatientButtonAction" text="Update" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Dentist">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#adddentistButtonAction" text="Add" />
+                <MenuItem mnemonicParsing="false" onAction="#updatedentistButtonAction" text="Update" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Appointment">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#addappointmentButtonAction" text="Add" />
+                <MenuItem mnemonicParsing="false" onAction="#updateappointmentButtonAction" text="Update" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Treatment">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#addtreatmentButtonAction" text="Add" />
+                <MenuItem mnemonicParsing="false" onAction="#updatetreatmentButtonAction" text="Update" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Bill">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#addbillButtonAction" text="Add" />
+                <MenuItem mnemonicParsing="false" onAction="#updatebillButtonAction" text="Update" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Reports">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Add" />
+                <MenuItem mnemonicParsing="false" text="Update" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Logout">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#logoutButtonAction" text="Logout" />
+              </items>
+            </Menu>
+          </menus>
+        </MenuBar>
+      </top>
+    </BorderPane>
+  </children>
+  <stylesheets>
+    <URL value="@style.css" />
+  </stylesheets>
+</AnchorPane>

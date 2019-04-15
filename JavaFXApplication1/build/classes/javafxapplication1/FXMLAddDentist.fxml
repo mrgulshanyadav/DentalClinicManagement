@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="javafxapplication1.FXMLAddDentistController">
+  <children>
+    <BorderPane layoutX="0.0" layoutY="0.0" prefHeight="400.0" prefWidth="600.0">
+      <center>
+        <Pane prefHeight="200.0" prefWidth="200.0">
+          <children>
+            <Text layoutX="282.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dentist">
+              <font>
+                <Font size="22.0" />
+              </font>
+            </Text>
+            <TextField fx:id="dentistid" disable="false" editable="true" layoutX="124.0" layoutY="57.0" prefWidth="158.0" />
+            <Text layoutX="30.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dentist ID" />
+            <TextField fx:id="dentistname" layoutX="124.0" layoutY="85.0" prefWidth="158.0" />
+            <Text layoutX="30.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+            <TextField fx:id="dentistage" layoutX="124.0" layoutY="114.0" prefWidth="158.0" />
+            <Text layoutX="30.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Age" />
+            <Text layoutX="30.0" layoutY="160.0" scaleX="1.0" scaleY="0.9999923519334313" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender" />
+            <ChoiceBox fx:id="dentistgender" layoutX="124.0" layoutY="145.0">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Male" />
+                  <String fx:value="Female" />
+                  <String fx:value="Other" />
+                </FXCollections>
+              </items>
+            </ChoiceBox>
+            <Text layoutX="28.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address" />
+            <TextArea fx:id="dentistaddress" layoutX="124.0" layoutY="177.0" prefHeight="61.0" prefWidth="158.0" wrapText="true" />
+            <TextField fx:id="dentistphone" layoutX="124.0" layoutY="249.0" prefWidth="158.0" />
+            <Text layoutX="30.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact No." />
+            <Text layoutX="30.0" layoutY="295.0" scaleX="1.0" scaleY="0.9999923519334313" strokeType="OUTSIDE" strokeWidth="0.0" text="Blood Group" />
+            <ChoiceBox fx:id="dentistbloodgroup" layoutX="124.0" layoutY="280.0">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="A+" />
+                  <String fx:value="A-" />
+                  <String fx:value="B+" />
+                  <String fx:value="B-" />
+                  <String fx:value="O+" />
+                  <String fx:value="O-" />
+                  <String fx:value="AB+" />
+                  <String fx:value="AB-" />
+                </FXCollections>
+              </items>
+            </ChoiceBox>
+            <Text layoutX="326.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Speciality" />
+            <Button layoutX="247.0" layoutY="330.0" mnemonicParsing="false" onAction="#saveDentist" text="SAVE" />
+            <Button layoutX="316.0" layoutY="330.0" mnemonicParsing="false" text="CLEAR" />
+            <Line endX="498.0" endY="0.0" layoutX="100.0" layoutY="38.0" startX="-98.0" />
+            <Line endX="498.0" endY="0.0" layoutX="100.0" layoutY="319.0" startX="-98.0" startY="0.0" />
+            <TextField fx:id="dentistspeciality" layoutX="391.0" layoutY="57.0" prefWidth="158.0" />
+          </children>
+        </Pane>
+      </center>
+      <top>
+        <MenuBar id="menu-bar" fx:id="myMenuBar">
+          <menus>
+            <Menu mnemonicParsing="false" text="Patient">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#addpatientButtonAction" text="Add" />
+                <MenuItem mnemonicParsing="false" onAction="#updatepatientButtonAction" text="Update" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Dentist">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#adddentistButtonAction" text="Add" />
+                <MenuItem mnemonicParsing="false" onAction="#updatedentistButtonAction" text="Update" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Appointment">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#addappointmentButtonAction" text="Add" />
+                <MenuItem mnemonicParsing="false" onAction="#updateappointmentButtonAction" text="Update" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Treatment">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#addtreatmentButtonAction" text="Add" />
+                <MenuItem mnemonicParsing="false" onAction="#updatetreatmentButtonAction" text="Update" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Bill">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#addbillButtonAction" text="Add" />
+                <MenuItem mnemonicParsing="false" onAction="#updatebillButtonAction" text="Update" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Reports">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Add" />
+                <MenuItem mnemonicParsing="false" text="Update" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Logout">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#logoutButtonAction" text="Logout" />
+              </items>
+            </Menu>
+          </menus>
+        </MenuBar>
+      </top>
+    </BorderPane>
+  </children>
+  <stylesheets>
+    <URL value="@style.css" />
+  </stylesheets>
+</AnchorPane>

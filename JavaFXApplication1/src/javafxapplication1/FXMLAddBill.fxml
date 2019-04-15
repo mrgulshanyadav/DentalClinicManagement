@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="javafxapplication1.FXMLAddBillController">
+  <children>
+    <BorderPane layoutX="0.0" layoutY="0.0" prefHeight="400.0" prefWidth="600.0">
+      <center>
+        <Pane prefHeight="200.0" prefWidth="200.0">
+          <children>
+            <Text layoutX="288.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bill">
+              <font>
+                <Font size="22.0" />
+              </font>
+            </Text>
+            <TextField fx:id="billid" disable="false" editable="true" layoutX="301.0" layoutY="56.0" prefWidth="158.0" />
+            <Text layoutX="189.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bill ID" />
+            <TextField fx:id="dentistname" editable="true" layoutX="301.0" layoutY="89.0" prefWidth="158.0" />
+            <Text layoutX="189.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dentist Name" />
+            <TextField fx:id="billdate" editable="true" layoutX="301.0" layoutY="121.0" prefWidth="158.0" />
+            <Text layoutX="189.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" />
+            <Text layoutX="189.0" layoutY="166.0" scaleX="1.0" scaleY="0.9999923519334313" strokeType="OUTSIDE" strokeWidth="0.0" text="Patient Name" />
+            <TextField fx:id="billtotal" editable="true" layoutX="302.0" layoutY="288.0" prefWidth="158.0" />
+            <Text layoutX="190.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total" />
+            <Button layoutX="247.0" layoutY="330.0" mnemonicParsing="false" onAction="#saveBill" text="SAVE" />
+            <Button layoutX="316.0" layoutY="330.0" mnemonicParsing="false" text="CLEAR" />
+            <Line endX="498.0" endY="0.0" layoutX="100.0" layoutY="38.0" startX="-98.0" />
+            <Line endX="498.0" endY="0.0" layoutX="100.0" layoutY="319.0" startX="-98.0" startY="0.0" />
+            <TextField fx:id="patientname" editable="true" layoutX="301.0" layoutY="153.0" prefWidth="158.0" />
+            <Text layoutX="189.0" layoutY="201.0" scaleX="1.0" scaleY="0.9999923519334313" strokeType="OUTSIDE" strokeWidth="0.0" text="Treatments" />
+            <TextArea fx:id="treatments" layoutX="300.0" layoutY="188.0" prefHeight="85.0" prefWidth="159.99997792968497" wrapText="true" />
+            <Button layoutX="301.0" layoutY="250.0" mnemonicParsing="false" prefWidth="158.0" text="Add Treatment" />
+          </children>
+        </Pane>
+      </center>
+      <top>
+        <MenuBar id="menu-bar" fx:id="myMenuBar">
+          <menus>
+            <Menu mnemonicParsing="false" text="Patient">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#addpatientButtonAction" text="Add" />
+                <MenuItem mnemonicParsing="false" onAction="#updatepatientButtonAction" text="Update" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Dentist">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#adddentistButtonAction" text="Add" />
+                <MenuItem mnemonicParsing="false" onAction="#updatedentistButtonAction" text="Update" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Appointment">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#addappointmentButtonAction" text="Add" />
+                <MenuItem mnemonicParsing="false" onAction="#updateappointmentButtonAction" text="Update" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Treatment">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#addtreatmentButtonAction" text="Add" />
+                <MenuItem mnemonicParsing="false" onAction="#updatetreatmentButtonAction" text="Update" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Bill">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#addbillButtonAction" text="Add" />
+                <MenuItem mnemonicParsing="false" onAction="#updatebillButtonAction" text="Update" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Reports">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Add" />
+                <MenuItem mnemonicParsing="false" text="Update" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Logout">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#logoutButtonAction" text="Logout" />
+              </items>
+            </Menu>
+          </menus>
+        </MenuBar>
+      </top>
+    </BorderPane>
+  </children>
+  <stylesheets>
+    <URL value="@style.css" />
+  </stylesheets>
+</AnchorPane>
